@@ -39,8 +39,14 @@ $ python dl-weights.py
 
 ## Usage
 
-- **Camera preview**: Enables and disables the webcam preview.
-- **Run detection model**: Enables and disables the detection model.
-- **Exposure**: Buttons which increase or decrease camera exposure stops by 1.
-- **Contrast**: Buttons which increase or decrease camera contrast stops by 4.
-- **Reset camera**: Reset all camera settings based on _camera_settings.log_ file.
+To use youtube links as your stream you might encounter some difficulty with an error with 'dislike_count' that error is only there because of the recent changes YouTube has made with its dislike button, all you have to is put the that line of code in comments and that error should get resolved. 
+
+This program can be used for object detection on multiple cameras. 
+
+You can make this an even bigger project by:
+- Setting a limit on FPS so your GPU can process more cameras.
+- Setting different kinds of settings for each camera you add.
+- Building a detection alert/log for any specific obejct or person.
+- Adding different algorithms other than YOLO eg.- Mask-RCNN, SSD, Fast-RCNN.
+- Training the algorithm for a specific object for better accuracy.
+
