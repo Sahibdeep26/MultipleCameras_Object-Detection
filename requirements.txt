@@ -1,0 +1,8 @@
+Flask==2.0.2
+Flask-Bootstrap==3.3.7.1
+Jinja2==3.0.3
+numpy==1.18.1
+opencv-contrib-python==4.5.3.56
+opencv-python==4.5.3.56
+pafy==0.5.5
+youtube-dl==2021.6.6

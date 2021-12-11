@@ -1,0 +1,22 @@
+{% extends "bootstrap/base.html" %} {% block title %} {{ TITLE }} {% endblock %}
+{% block styles %} {{ super() }}
+
+<!-- Custom styles -->
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+{% endblock %} {% block content %}
+<body>
+  <h1>{{ TITLE }}</h1>
+
+<div id="container">
+  <img id="videoElement" src="{{ url_for('video_feed') }}" />
+</div>
+
+<div id="container">
+  <img id="videoElement" src="{{ url_for('video_feed2') }}" />
+</div>
+</body>
+{% endblock %} {% block scripts %}
+<!-- Imports -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+{{ super() }} {% endblock %}
